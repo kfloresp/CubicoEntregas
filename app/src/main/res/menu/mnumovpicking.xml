@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MoverPalletPicking">
+    <item
+        android:id="@+id/mnuBack"
+        android:icon="@drawable/baseline_keyboard_backspace_white_48"
+        app:showAsAction="always"
+        android:title="Regresar"/>
+    <item
+        android:id="@+id/mnuRefresh"
+        android:icon="@android:drawable/stat_notify_sync"
+        app:showAsAction="always"
+        android:title="Nuevo"/>
+
+</menu>

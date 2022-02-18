@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Cubico Delivery</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usuario</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">V.1.0.15b - LOGINET</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Recibir datos</string>
+    <string name="menu_slideshow">Enviar datos</string>
+    <string name="menu_tools">Configuración</string>
+    <string name="menu_share">Consultas</string>
+    <string name="menu_send">Salir</string>
+
+    <string name="alert_title_aviso">Aviso</string>
+    <string name="title_activity_choice_wahouse">Mis Almacenes</string>
+
+    <string name="prompts">Seleccione opción</string>
+
+    <string-array name="country_arrays">
+        <item>No Warehouse</item>
+    </string-array>
+    <string name="title_activity_transferencias">Transferencias</string>
+    <string name="title_activity_settings">Cubico WMS Parámetros</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_mover_pallet_picking">Mover UA/Pallet (Picking)</string>
+    <string name="title_activity_mover_picking_detail">Detalle Picking</string>
+    <string name="title_activity_recibo">Recibo</string>
+    <string name="title_activity_recibo_detail">ReciboDetail</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_menu_entregas">MenuEntregas</string>
+    <string name="title_activity_inicio_dia">Inicio día</string>
+    <string name="title_activity_ruta">Rutas de entrega</string>
+    <string name="title_activity_pedidos">Pedidos</string>
+    <string name="title_activity_detail_pedido">DetailPedido</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Graficos -->
+
+    <string name="pie_chart">Pie Chart</string>
+    <string name="column_chart">Column Chart</string>
+    <string name="line_chart">Line Chart</string>
+    <string name="venn_diagram">Venn Diagram</string>
+    <string name="heat_map_chart">Heat Map Chart</string>
+    <string name="tag_cloud">Tag Cloud</string>
+    <string name="waterfall_chart">Waterfall Chart</string>
+    <string name="tree_map_chart">Tree Map Chart</string>
+    <string name="circular_gauge">Circular Gauge</string>
+    <string name="thermometer">Thermometer</string>
+    <string name="linear_color_scale">Linear Color Scale</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="wind_direction">Wind Direction</string>
+    <string name="scatter_chart">Scatter Chart</string>
+    <string name="resource_chart">Resource Chart</string>
+    <string name="radar_chart">Radar Chart</string>
+    <string name="polar_chart">Polar Chart</string>
+    <string name="range_chart">Range Chart</string>
+    <string name="vertical_chart">Vertical Chart</string>
+    <string name="funnel_chart">Funnel Chart</string>
+    <string name="pert_chart">Pert Chart</string>
+    <string name="gantt_chart">Gantt Chart</string>
+    <string name="combined_chart">Combined Chart</string>
+    <string name="bubble_chart">Bubble Chart</string>
+    <string name="pareto_chart">Pareto Chart</string>
+    <string name="pyramid_chart">Pyramid Chart</string>
+    <string name="area_chart">Area Chart</string>
+    <string name="bar_chart">Bar Chart</string>
+    <string name="box_chart">Box Chart</string>
+    <string name="mosaic_chart">Mosaic Chart</string>
+    <string name="mekko_chart">Mekko Chart</string>
+    <string name="bar3d_chart">3D Bar Chart</string>
+    <string name="column3d_chart">3D Column Chart</string>
+    <string name="area3d_chart">3D Area Chart</string>
+    <string name="hilo_chart">Hilo Chart</string>
+    <string name="ohlc_chart">OHLC Chart</string>
+    <string name="quadrant_chart">Quadrant Chart</string>
+    <string name="bubble_map">Bubble Map</string>
+    <string name="choropleth_map">Choropleth Map</string>
+    <string name="point_map">Point Map</string>
+    <string name="connector_map">Connector Map</string>
+    <string name="sunburst_chart">Sunburst Chart</string>
+    <string name="two_pies_one_column">Two pies one column</string>
+
+    <string name="dash">-</string>
+
+</resources>

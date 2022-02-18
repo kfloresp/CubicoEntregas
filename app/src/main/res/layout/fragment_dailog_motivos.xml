@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dialogs.DailogMotivosFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimary"
+       android:elevation="6dp"
+       android:id="@+id/barraSuperior">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp"
+           android:textColor="@color/colorWhite"
+           android:text="MOTIVO DE NO ENTREGA"
+           android:layout_weight="1"/>
+       <ImageButton
+           android:id="@+id/btnBackDialog"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@android:color/transparent"
+           android:src="@android:drawable/ic_notification_clear_all"
+           android:layout_marginTop="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_gravity="right"
+           android:layout_weight="0"/>
+
+
+
+
+   </LinearLayout>
+    <CheckBox
+        android:id="@+id/chkDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Es una devolución?"
+        android:checked="false"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lstMotivos"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_backspace_white_48"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btnDialogReturn"
+        />
+
+</LinearLayout>

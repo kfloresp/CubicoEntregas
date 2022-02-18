@@ -1,0 +1,30 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=26:63:3B:DB:05:02:63:A0:E6:15:02:AA:5F:78:C6:A4:66:8A:5B:38%3Bcom.cubico.cubicodelivery.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.cubico.cubicodelivery.activities
+
+    SHA-1 certificate fingerprint:
+    26:63:3B:DB:05:02:63:A0:E6:15:02:AA:5F:78:C6:A4:66:8A:5B:38
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+     LOginet: AIzaSyCjFwS0Oql7hTG26SGXk5MVXVH1KqrrZlc
+     Cipsa:   AIzaSyCCN61D4-y3Cf1TC1Ce6vCWnvMCzXaBQVY
+     Solpack:
+    string in this file.
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCCN61D4-y3Cf1TC1Ce6vCWnvMCzXaBQVY</string>
+
+
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCjFwS0Oql7hTG26SGXk5MVXVH1KqrrZlc</string>
+</resources>

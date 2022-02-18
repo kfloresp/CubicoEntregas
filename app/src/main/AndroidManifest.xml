@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cubico.cubicodelivery">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".CubicoGlobal"
+        android:allowBackup="true"
+        android:icon="@drawable/cubdev"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cubdev"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".activities.DetailPedido"
+            android:label="Entrega de pedido"
+            android:parentActivityName=".activities.Pedidos"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.Pedidos" />
+        </activity>
+        <activity android:name=".clientTCP" />
+        <activity
+            android:name=".activities.Pedidos"
+            android:label="@string/title_activity_pedidos"
+            android:parentActivityName=".activities.Ruta"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.Ruta" />
+        </activity>
+        <activity
+            android:name=".activities.Ruta"
+            android:label="@string/title_activity_ruta"
+            android:parentActivityName=".activities.InicioDia"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.InicioDia" />
+        </activity>
+        <activity
+            android:name=".activities.InicioDia"
+            android:label="@string/title_activity_inicio_dia"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MenuEntregas"
+            android:label="@string/title_activity_menu_entregas"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ReciboDetail"
+            android:label="@string/title_activity_recibo_detail"
+            android:parentActivityName=".activities.Recibo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.Recibo" />
+        </activity>
+        <activity
+            android:name=".activities.Recibo"
+            android:label="@string/title_activity_recibo"
+            android:parentActivityName=".activities.Principal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.Principal" />
+        </activity>
+        <activity
+            android:name=".activities.MoverPickingDetail"
+            android:label="@string/title_activity_mover_picking_detail"
+            android:parentActivityName=".activities.MoverPalletPicking"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.MoverPalletPicking" />
+        </activity>
+        <activity
+            android:name=".activities.MoverPalletPicking"
+            android:label="@string/title_activity_mover_pallet_picking"
+            android:parentActivityName=".activities.Principal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.activities.Principal" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Transferencias"
+            android:label="@string/title_activity_transferencias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChoiceWahouse"
+            android:label="@string/title_activity_choice_wahouse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.Principal"
+            android:label="CUBICO WMS - MENU"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cubico.cubicodelivery.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BarcodeActivityVertical"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+
+        <service
+            android:name=".services.GPS_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cubico.cubicodelivery.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+</manifest>
