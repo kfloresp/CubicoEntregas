@@ -161,7 +161,7 @@ public interface ApiCubico {
     // http://172.16.32.15:8087/SGAA_WCF/CourierService.svc/rest/ConfirmarEntregaPedido/
     // intIdActividad/strIdTx/strCx/strCy/intIdEstado/intIdCausal/strObservacion/imgRtFirma/imgRtPhoto
 
-    @POST("Courier")
+    @POST("Courier/ConfirmarPedidoV2")
     Call <eMensaje> Post_ConfirmarEntregaPedido(
             @Body ConfirmarPedidoModel confirmarPedidoModel
 
@@ -173,9 +173,9 @@ public interface ApiCubico {
 
     );
 
-    @GET("Courier")
+    @GET("Courier/ResumenPedidosXActividad")
     Call <ResumenPedidosModel> Get_ResumenPedido(
-            @Query("id") int id
+            @Query("intIdActividad") int intIdActividad
 
     );
 
